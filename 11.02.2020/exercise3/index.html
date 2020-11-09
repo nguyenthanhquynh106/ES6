@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .container {
+            margin: auto;
+            display: inline-block;
+            padding: 100px 200px;
+            border: 1px solid #000;
+        }
+
+        ul {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <select id="device" onchange="changeOption()">
+            <option>Chọn thiết bị</option>
+            <option value="laptop">Laptop</option>
+            <option value="phone">Điện thoại</option>
+            <option value="tv">Tivi</option>
+        </select>
+        <ul id="laptopOptions">
+            <li>Macbook</li>
+            <li>Dell</li>
+            <li>Lenovo</li>
+            <li>Asus</li>
+        </ul>
+        <ul id="phoneOptions">
+            <li>Apple</li>
+            <li>Samsung</li>
+            <li>Nokia</li>
+        </ul>
+        <ul id="tvOptions">
+            <li>LG</li>
+            <li>Sony</li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

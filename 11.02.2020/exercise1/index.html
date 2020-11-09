@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .container {
+            margin: auto;
+            display: inline-block;
+            border: 1px solid #000;
+            padding: 50px;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <label for="firstNumber">First number</label>
+            <input type="text" id="firstNumber"><br><br>
+            <label for="secondNumber">Second number</label>
+            <input type="text" id="secondNumber"><br><br>
+            <input type="button" style="margin-right: 66px;" value="Total" onclick="calculateSum()">
+            <input type="text" id="result">
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
