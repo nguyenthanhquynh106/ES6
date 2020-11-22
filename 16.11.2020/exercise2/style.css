@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.display-block.display-block.display-block.display-block {
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.shallow {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.shallow .shallow-list {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.shallow .shallow-list .shallow-item {
+    list-style: none;
+    background-color: #2a394f;
+    border-left: 1px solid #4f5868;
+    border-right: 1px solid #4f5868;
+    transition: all 0.5s ease-in-out;
+}
+
+.shallow .shallow-list .shallow-item:first-child {
+    border-top: 1px solid #4f5868;
+}
+
+.shallow .shallow-list .shallow-item:not(:last-child) {
+    border-bottom: 1px solid #293547;
+}
+
+.shallow .shallow-list .shallow-item:hover {
+    background-color: #222e41;
+}
+
+.shallow .shallow-list .shallow-item:not(:last-child):hover {
+    border-bottom: 3px solid #355789;
+}
+
+.shallow .shallow-list .shallow-item .shallow-link {
+    display: block;
+    padding: 30px 29px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.shallow .shallow-list .shallow-item .shallow-link .shallow-icon {
+    margin-right: 15px;
+    font-size: 20px;
+    display: inline-block;
+    width: 25px;
+}
+
+.shallow .shallow-list .shallow-item .shallow-text {
+    display: inline-block;
+    width: 190px;
+}
+
+.shallow .shallow-list .shallow-item .shallow-icon--reotate {
+    transform: rotate(90deg);
+    color: #14a2f7;
+    display: inline-block;
+}
+
+.shallow .shallow-item .shallow_dropdown-list {
+    border-radius: inherit;
+    transform: translateY(0);
+    display: none;
+    animation: shallow-down 0.3s ease-in-out;
+}
+
+.shallow .shallow-item .shallow_dropdown-list .shallow-item {
+    list-style: none;
+    border-left: 1px solid #3bb3fa;
+    border-right: 1px solid #3bb3fa;
+    background-color: #16a4f9;
+}
+
+.shallow .shallow-item .shallow_dropdown-list .shallow-item:not(:last-child) {
+    border-bottom: none;
+}
+
+.shallow .shallow-item .shallow_dropdown-list .shallow-item:hover {
+    background-color: #0c93e3;
+    border-left: 4px solid #146ca1;
+}
+
+.shallow .shallow-item .shallow_dropdown-list .shallow-item .shallow-link {
+    display: block;
+    padding: 30px 20px;
+    font-size: 18px;
+    color: #fff;
+}

@@ -1,0 +1,14 @@
+#edit-table {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+
+#delete-rows {
+    margin-left: 5px;
+}
+
+.save,
+.cancel {
+    display: none;
+}

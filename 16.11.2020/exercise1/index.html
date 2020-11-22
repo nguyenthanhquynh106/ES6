@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Exercise 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="edit-table">
+            <button type="button" id="add-row" class="btn btn-primary" onclick="addRow('1')">Add</button>
+            <button type="button" id="delete-rows" class="btn btn-danger" onclick="deleteRows('1')">Delete</button>
+        </div>
+
+        <table id="user-table" class="table table-striped">
+            <thead>
+                <tr>
+                    <th><i class="far fa-square"></i></th>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="row1">
+                    <td><i class="far fa-square"></i></td>
+                    <td id="id-row1">1</td>
+                    <td id="name-row1">Nguyễn Văn Nam</td>
+                    <td id="gender-row1">Nữ</td>
+                    <td id="age-row1">12</td>
+                    <td id="action-row1">
+                        <button type="button" id="edit-button1" value="Edit" class="btn btn-primary btn-sm edit"
+                            onclick="editRow('1')">Edit</button>
+                        <button type="button" id="save-button1" value="Save" class="btn btn-success btn-sm save"
+                            onclick="saveRow('1')">Save</button>
+                        <button type="button" id="cancel-button1" value="Cancel" class="btn btn-warning btn-sm cancel"
+                            onclick="cancelRow('1')">Cancel</button>
+                        <button type="button" id="delete-button1" value="Delete" class="btn btn-danger btn-sm delete"
+                            onclick="deleteRow('1')">Delete</button>
+                    </td>
+                </tr>
+                <tr id="row2">
+                    <td><i class="far fa-square"></i></td>
+                    <td id="id-row2">2</td>
+                    <td id="name-row2">Nguyễn Thị Nữ</td>
+                    <td id="gender-row2">Nam</td>
+                    <td id="age-row2">16</td>
+                    <td id="action-row2">
+                        <button type="button" id="edit-button2" value="Edit" class="btn btn-primary btn-sm edit"
+                            onclick="editRow('2')">Edit</button>
+                        <button type="button" id="save-button2" value="Save" class="btn btn-success btn-sm save"
+                            onclick="saveRow('2')">Save</button>
+                        <button type="button" id="cancel-button2" value="Cancel" class="btn btn-warning btn-sm cancel"
+                            onclick="cancelRow('2')">Cancel</button>
+                        <button type="button" id="delete-button2" value="Delete" class="btn btn-danger btn-sm delete"
+                            onclick="deleteRow('2')">Delete</button>
+                    </td>
+                </tr>
+                <tr id="row1">
+                    <td><i class="far fa-square"></i></td>
+                    <td id="id-row3">3</td>
+                    <td id="name-row3">Nguyễn Ngọc Duy</td>
+                    <td id="gender-row3">Nữ</td>
+                    <td id="age-row3">16</td>
+                    <td id="cation-row3">
+                        <button type="button" id="edit-button3" value="Edit" class="btn btn-primary btn-sm edit"
+                            onclick="editRow('3')">Edit</button>
+                        <button type="button" id="save-button3" value="Save" class="btn btn-success btn-sm save"
+                            onclick="saveRow('3')">Save</button>
+                        <button type="button" id="cancel-button3" value="Cancel" class="btn btn-warning btn-sm cancel"
+                            onclick="cancelRow('3')">Cancel</button>
+                        <button type="button" id="delete-button3" value="Delete" class="btn btn-danger btn-sm delete"
+                            onclick="deleteRow('3')">Delete</button>
+                    </td>
+                </tr>
+                <tr id="row1">
+                    <td><i class="far fa-square"></i></td>
+                    <td id="id-row4">4</td>
+                    <td id="name-row4">Nguyễn Thị Duy</td>
+                    <td id="gender-row4">Nam</td>
+                    <td id="age-row4">15</td>
+                    <td id="cation-row4">
+                        <button type="button" id="edit-button4" value="Edit" class="btn btn-primary btn-sm edit"
+                            onclick="editRow('4')">Edit</button>
+                        <button type="button" id="save-button4" value="Save" class="btn btn-success btn-sm save"
+                            onclick="saveRow('4')">Save</button>
+                        <button type="button" id="cancel-button4" value="Cancel" class="btn btn-warning btn-sm cancel"
+                            onclick="cancelRow('4')">Cancel</button>
+                        <button type="button" id="delete-button4" value="Delete" class="btn btn-danger btn-sm delete"
+                            onclick="deleteRow('4')">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
